@@ -15,14 +15,14 @@ exports.rules = [
     upgrade: 'keep',
   },
   {
-    path: 'package.json.mustance',
+    path: 'package.json.mustache',
     upgrade: 'merge',
-    handlers: ['mustance']
+    handlers: ['mustache']
   },
   {
     path: 'README.md.mustache',
     handlers: [
-      'mustance',
+      'mustache',
       // core => core.extractHtmlCustomArea('custom')
     ],
   },
