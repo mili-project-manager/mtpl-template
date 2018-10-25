@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/Val-istar-Guo/mili-template/compare/v0.1.0...v0.1.1) (2018-10-25)
+
+
+### Bug Fixes
+
+* **readme:** [object Object] at readme custom section ([57237c1](https://github.com/Val-istar-Guo/mili-template/commit/57237c1))
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/Val-istar-Guo/mili-template/compare/v0.1.0-alpha.2...v0.1.0) (2018-10-25)
 
