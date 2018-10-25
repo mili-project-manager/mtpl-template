@@ -22,7 +22,7 @@ exports.rules = [
   {
     path: 'README.md.mustache',
     handlers: [
-      core => core.extractArea('custom', '<!-- custom -->'),
+      core => core.extractArea('content', '<!-- custom -->'),
       'mustache',
     ],
   },
