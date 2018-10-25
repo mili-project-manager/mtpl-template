@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/Val-istar-Guo/mili-template/compare/v0.1.0-alpha.2...v0.1.0) (2018-10-25)
+
+
+### Features
+
+* add release:first script ([5e2a95a](https://github.com/Val-istar-Guo/mili-template/commit/5e2a95a))
+* **readme:** support customize readme ([f208980](https://github.com/Val-istar-Guo/mili-template/commit/f208980))
+
+
+
 <a name="0.1.0-alpha.2"></a>
 # [0.1.0-alpha.2](https://github.com/Val-istar-Guo/mili-template/compare/v0.1.0-alpha.1...v0.1.0-alpha.2) (2018-10-17)
 
