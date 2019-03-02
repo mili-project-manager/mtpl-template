@@ -20,6 +20,10 @@ exports.rules = [
     handlers: ['mustache']
   },
   {
+    path: '.gitignore',
+    upgrade: 'merge',
+  },
+  {
     path: 'README.md.mustache',
     handlers: [
       core => core.extractArea('content', '<!-- custom -->'),
