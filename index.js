@@ -1,8 +1,8 @@
 // path of template files
 exports.path = './template'
 
-// mili version >= 1.0.0
-exports.engines = ">=1.0.0<2.0.0"
+// mili version >= 2.0.0
+exports.engines = ">=2.0.0<3.0.0"
 
 
 exports.rules = [
