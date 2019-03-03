@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Val-istar-Guo/mili-template/compare/v0.1.2...v1.0.0) (2019-03-03)
+
+
+### Features
+
+* support mili2 ([8c42b46](https://github.com/Val-istar-Guo/mili-template/commit/8c42b46))
+
+
+### BREAKING CHANGES
+
+* Never support mili@1.x.If you want to use mili@1.x, ensure template version less
+than 1.0.0.
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/Val-istar-Guo/mili-template/compare/v0.1.1...v0.1.2) (2018-12-12)
 
