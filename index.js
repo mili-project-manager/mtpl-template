@@ -2,8 +2,7 @@
 exports.path = './template'
 
 // mili version >= 2.0.0
-exports.engines = ">=2.0.0 <3.0.0"
-
+exports.engines = '>=2.0.0 <3.0.0'
 
 exports.rules = [
   {
@@ -17,7 +16,7 @@ exports.rules = [
   {
     path: 'package.json.mustache',
     upgrade: 'merge',
-    handlers: ['mustache']
+    handlers: ['mustache'],
   },
   {
     path: '.gitignore',
