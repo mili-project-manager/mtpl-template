@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/Val-istar-Guo/mili-template/compare/v1.0.2...v1.1.0) (2019-06-11)
+
+
+### Bug Fixes
+
+* misspelling of handler name ([1543d1b](https://github.com/Val-istar-Guo/mili-template/commit/1543d1b))
+
+
+### Features
+
+* use prettier to beautify code ([ab7e67c](https://github.com/Val-istar-Guo/mili-template/commit/ab7e67c))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/Val-istar-Guo/mili-template/compare/v1.0.1...v1.0.2) (2019-03-03)
 
