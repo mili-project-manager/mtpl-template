@@ -4,10 +4,12 @@
     "node": ">=8.9.4"
   },
   "scripts": {
+    {{#answers.standerVersion}}
     "ca": "git add -A && git-cz -av",
     "commit": "git-cz",
     "release": "standard-version",
     "release:first": "standard-version --first-release"
+    {{/answers.standerVersion}}
   },
   "devDependencies": {
     {{#answers.standerVersion}}
