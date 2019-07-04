@@ -1,9 +1,15 @@
 // path of template files
 exports.path = './template'
 
-// mili version >= 2.0.0
-exports.engines = '>=2.0.0 <3.0.0'
+// mili version >= 3.0.0
+exports.engines = '>=3.0.0 <4.0.0'
 
+const ignoreWhenNoLint = core =>
+  core.ignoreWhen(resource => !resource.answers.lint)
+const ignoreWhenNoStanderVersion = core =>
+  core.ignoreWhen(resource => !resource.answers.standardVersion)
+const ignoreWhenLock = core =>
+  core.ignoreWhen(resource => resource.answers.lock)
 exports.rules = [
   {
     path: './template',
@@ -14,19 +20,49 @@ exports.rules = [
     upgrade: 'keep',
   },
   {
-    path: 'package.json.mustache',
-    upgrade: 'merge',
-    handlers: ['mustache'],
+    path: '.@(lintstagedrc|prettierrc).yml',
+    handler: ignoreWhenNoLint,
   },
   {
-    path: '.gitignore',
+    path: '@(.czrc|.commitlintrc.yml)',
+    handler: ignoreWhenNoStanderVersion,
+  },
+  {
+    path: '.huskyrc.yml.mustache',
+    handlers: [
+      core =>
+        core.ignoreWhen(
+          resource =>
+            !resource.answers.lint && !resource.answers.standardVersion
+        ),
+      'mustache',
+    ],
+  },
+  {
+    path: 'package.json.mustache',
     upgrade: 'merge',
+    handler: 'mustache',
+  },
+  {
+    path: '.gitignore.mustache',
+    upgrade: 'merge',
+    handler: 'mustache',
   },
   {
     path: 'README.md.mustache',
     handlers: [
-      core => core.extractArea('content', '<!-- custom -->'),
+      core => core.extractArea('description', '<!-- description -->'),
       'mustache',
     ],
   },
+  {
+    path: '.npmrc',
+    handler: ignoreWhenLock,
+  },
+]
+
+exports.questions = [
+  { type: 'confirm', name: 'lint', message: 'use lint' },
+  { type: 'confirm', name: 'standardVersion', message: 'use standard version' },
+  { type: 'confirm', name: 'lock', message: 'lock dependencies' },
 ]

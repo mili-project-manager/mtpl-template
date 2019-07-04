@@ -2,23 +2,16 @@
 .DS_Store
 
 # Editor
-.vscode
 *.swp
+.vscode
 
 # NodeJS
 node_modules
-npm-debug.log*
 
-# Yarn
+# Log
 yarn-error.log
-
-# Compile
-dist
-views/index.*.html
+npm-debug.log*
 
 # Lock
 yarn.lock
 package-lock.json
-
-# test
-demo/

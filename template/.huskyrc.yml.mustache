@@ -1,0 +1,7 @@
+hooks:
+  {{#answers.lint}}
+  pre-commit: 'lint-staged'
+  {{/answers.lint}}
+  {{#answers.standardVersion}}
+  commit-msg: 'commitlint -E HUSKY_GIT_PARAMS'
+  {{/answers.standardVersion}}

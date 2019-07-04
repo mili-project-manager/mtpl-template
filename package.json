@@ -8,7 +8,8 @@
     "ca": "git add -A && git-cz -av",
     "commit": "git-cz",
     "release": "standard-version",
-    "release:alpha": "standard-version --prerelease alpha"
+    "release:alpha": "standard-version --prerelease alpha",
+    "release:first": "standard-version --first-release"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,8 @@
     "lint-staged": "^8.1.5",
     "prettier": "1.17.0",
     "standard-version": "^5.0.2"
+  },
+  "engines": {
+    "node": ">=8.9.4"
   }
 }
