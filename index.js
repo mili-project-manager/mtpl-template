@@ -10,6 +10,16 @@ const ignoreWhenNoStanderVersion = core =>
   core.ignoreWhen(resource => !resource.answers.standardVersion)
 const ignoreWhenLock = core =>
   core.ignoreWhen(resource => resource.answers.lock)
+
+const addAdditionalProperty = (name, value) => {
+  return {
+    genFile: async (file, resource) => {
+      if (typeof value === 'function') file.addition[name] = value(resource)
+      else file.addition[name] = value
+    },
+  }
+}
+
 exports.rules = [
   {
     path: './template',
@@ -41,7 +51,13 @@ exports.rules = [
   {
     path: 'package.json.mustache',
     upgrade: 'merge',
-    handler: 'mustache',
+    handlers: [
+      addAdditionalProperty(
+        'needGitHook',
+        ({ answers }) => answers.standardVersion || answers.lock
+      ),
+      'mustache',
+    ],
   },
   {
     path: '.gitignore.mustache',

@@ -1,17 +1,19 @@
 {
-  "name": "{{{project.name}}}",
-  "engines": {
+  "name": "{{{project.name}}}"
+  , "engines": {
     "node": ">=8.9.4"
-  },
-  "scripts": {
-    {{#answers.standerVersion}}
+  }
+  {{#answers.standerVersion}}
+  , "scripts": {
     "ca": "git add -A && git-cz -av",
     "commit": "git-cz",
     "release": "standard-version",
     "release:first": "standard-version --first-release"
-    {{/answers.standerVersion}}
-  },
-  "devDependencies": {
+  }
+  {{/answers.standerVersion}}
+
+  {{#addition.needGitHook}}
+  , "devDependencies": {
     {{#answers.standerVersion}}
     "@commitlint/cli": "^7.2.0",
     "@commitlint/config-conventional": "^7.1.2",
@@ -28,17 +30,9 @@
     "standard-version": "^5.0.2",
     {{/answers.standerVersion}}
 
-    {{#answers.standerVersion}}
-    {{^answers.lint}}
+    {{#addition.needGitHook}}
     "husky": "^2.1.0"
-    {{/answers.lint}}
-    {{/answers.standerVersion}}
-
-    {{^answers.standerVersion}}
-    {{#answers.lint}}
-    "husky": "^2.1.0"
-    {{/answers.lint}}
-    {{/answers.standerVersion}}
+    {{/addition.needGitHook}}
 
     {{#answers.standerVersion}}
     {{#answers.lint}}
@@ -46,4 +40,5 @@
     {{/answers.lint}}
     {{/answers.standerVersion}}
   }
+  {{/addition.needGitHook}}
 }
