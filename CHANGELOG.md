@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/Val-istar-Guo/mili-template/compare/v1.2.2...v1.2.3) (2019-07-17)
+
+
+### Bug Fixes
+
+* never support mili before 3.2.0 ([ca4cf5c](https://github.com/Val-istar-Guo/mili-template/commit/ca4cf5c))
+* useless empty object in package.json ([5172a5d](https://github.com/Val-istar-Guo/mili-template/commit/5172a5d))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/Val-istar-Guo/mili-template/compare/v1.2.1...v1.2.2) (2019-07-05)
 

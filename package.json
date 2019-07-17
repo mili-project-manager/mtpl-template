@@ -1,6 +1,6 @@
 {
   "name": "mili-template",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "The template for mili template",
   "main": "index.js",
   "scripts": {
