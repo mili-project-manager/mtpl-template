@@ -37,5 +37,8 @@
   },
   "engines": {
     "node": ">=8.9.4"
+  },
+  "dependencies": {
+    "@mili-handlers/additional-property": "^1.0.0"
   }
 }

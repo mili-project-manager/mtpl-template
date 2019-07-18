@@ -1,7 +1,6 @@
-// path of template files
-exports.path = './template'
+const addAdditionalProperty = require('@mili-handlers/additional-property')
 
-// mili version >= 3.0.0
+exports.path = './template'
 exports.engines = '>=3.2.0 <4.0.0'
 
 const ignoreWhenNoLint = core =>
@@ -10,15 +9,9 @@ const ignoreWhenNoStanderVersion = core =>
   core.ignoreWhen(resource => !resource.answers.standardVersion)
 const ignoreWhenLock = core =>
   core.ignoreWhen(resource => resource.answers.lock)
-
-const addAdditionalProperty = (name, value) => {
-  return {
-    genFile: async (file, resource) => {
-      if (typeof value === 'function') file.addition[name] = value(resource)
-      else file.addition[name] = value
-    },
-  }
-}
+const isNeedGitHook = ({ answers }) => answers.standardVersion || answers.lint
+const ignoreWhenNotNeedGitHook = core =>
+  core.ignoreWhen(resource => !isNeedGitHook(resource))
 
 exports.rules = [
   {
@@ -39,25 +32,12 @@ exports.rules = [
   },
   {
     path: '.huskyrc.yml.mustache',
-    handlers: [
-      core =>
-        core.ignoreWhen(
-          resource =>
-            !resource.answers.lint && !resource.answers.standardVersion
-        ),
-      'mustache',
-    ],
+    handlers: [ignoreWhenNotNeedGitHook, 'mustache'],
   },
   {
     path: 'package.json.mustache',
     upgrade: 'merge',
-    handlers: [
-      addAdditionalProperty(
-        'needGitHook',
-        ({ answers }) => answers.standardVersion || answers.lock
-      ),
-      'mustache',
-    ],
+    handlers: [addAdditionalProperty('needGitHook', isNeedGitHook), 'mustache'],
   },
   {
     path: '.gitignore.mustache',
