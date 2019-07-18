@@ -1,8 +1,8 @@
 // path of template files
 exports.path = './template'
 
-// mili version >= 2.0.0
-exports.engines = '>=2.0.0 <3.0.0'
+// mili version should >= 3.5.0 and < 4.0.0
+exports.engines = '>=3.5.0 <4.0.0'
 
 exports.rules = [
   {
@@ -12,6 +12,9 @@ exports.rules = [
   },
   {
     path: 'README.md.mustache',
-    handlers: ['mustache'],
+    handlers: [
+      core => core.extractArea('description', '<!-- description -->'),
+      'mustache',
+    ],
   },
 ]
