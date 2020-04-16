@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/Val-istar-Guo/mili-template/compare/v1.2.5...v1.3.0) (2020-04-16)
+
+
+### Features
+
+* mandatory mili check and remove pretter ([a3fd8e8](https://github.com/Val-istar-Guo/mili-template/commit/a3fd8e8))
+
+
+
 <a name="1.2.5"></a>
 ## [1.2.5](https://github.com/Val-istar-Guo/mili-template/compare/v1.2.4...v1.2.5) (2019-07-18)
 
