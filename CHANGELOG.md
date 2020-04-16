@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/Val-istar-Guo/mili-template/compare/v1.3.0...v1.3.1) (2020-04-16)
+
+
+### Bug Fixes
+
+* remove .prettierrc.yml ([c000a23](https://github.com/Val-istar-Guo/mili-template/commit/c000a23))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/Val-istar-Guo/mili-template/compare/v1.2.5...v1.3.0) (2020-04-16)
 
