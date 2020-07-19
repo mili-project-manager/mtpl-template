@@ -9,7 +9,8 @@
     "commit": "git-cz",
     "release": "standard-version",
     "release:alpha": "standard-version --prerelease alpha",
-    "release:first": "standard-version --first-release"
+    "release:first": "standard-version --first-release",
+    "postpublish": "git push"
   },
   "repository": {
     "type": "git",
