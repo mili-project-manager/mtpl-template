@@ -1,5 +1,0 @@
-hooks:
-  pre-commit: npx mili check --diff --ignore "**/node_modules"
-  {{#answers.standardVersion}}
-  commit-msg: 'commitlint -E HUSKY_GIT_PARAMS'
-  {{/answers.standardVersion}}

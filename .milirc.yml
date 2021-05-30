@@ -1,8 +1,2 @@
-mili:
-  version: 3.8.1
-template:
-  repository: ./
-answers:
-  lint: true
-  standardVersion: true
-  lock: false
+template: ./
+version: 1.4.0

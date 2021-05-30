@@ -1,0 +1,8 @@
+{{#if readme.title}}
+<!-- title -->{{{.}}}<!-- title -->
+{{/if}}
+{{#unless readme.title}}
+# {{{npm.name}}}
+{{/unless}}
+
+<!-- description -->{{{readme.description}}}<!-- description -->

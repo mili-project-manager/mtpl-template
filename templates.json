@@ -1,0 +1,30 @@
+[
+  {
+    "path": [
+      "templates/**",
+      "hooks.json",
+      "questions.json"
+    ],
+    "handlers": [
+      "init"
+    ]
+  },
+  {
+    "path": [
+      "templates.json",
+      "mili.json"
+    ],
+    "handlers": [
+      "exist"
+    ]
+  },
+  {
+    "path": [
+      ".gitignore.hbs",
+      "README.md.hbs"
+    ],
+    "handlers": [
+      "handlebars"
+    ]
+  }
+]

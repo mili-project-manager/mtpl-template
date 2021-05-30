@@ -1,0 +1,11 @@
+[
+  {
+    "path": [
+      ".gitignore.hbs",
+      "README.md.hbs"
+    ],
+    "handlers": [
+      "handlebars"
+    ]
+  }
+]

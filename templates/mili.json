@@ -1,0 +1,23 @@
+{
+  "engines": [
+    "^4.3.0"
+  ],
+  "extends": [
+    "npm:@mtpl/base"
+  ],
+  "loaders": [
+    {
+      "name": "markdown-section",
+      "options": {
+        "key": "readme",
+        "filepath": "README.md",
+        "sections": [
+          "title",
+          "description",
+          "usage",
+          "addition"
+        ]
+      }
+    }
+  ]
+}
