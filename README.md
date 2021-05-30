@@ -9,7 +9,7 @@ To make it easy for developers to quickly create templates that conform to the m
 ## Usage
 
 ```shell
-npx mili init npm:@mili/template
+npx mili init npm:@mtpl/template
 ```
 
 ## See more
