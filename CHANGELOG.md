@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://www.github.com/mili-project-manager/mtpl-template/compare/v2.0.0...v2.0.1) (2021-05-30)
+
+
+### Bug Fixes
+
+* wrong package name in release action ([c92679d](https://www.github.com/mili-project-manager/mtpl-template/commit/c92679d142d873cc7ccb92e280e3e88ed6ff0126))
+
 ## [2.0.0](https://www.github.com/mili-project-manager/mtpl-template/compare/v1.4.0...v2.0.0) (2021-05-30)
 
 
