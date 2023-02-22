@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ca": "git add -A && git-cz -av",
-    "ci": "git-cz",
     "release": "standard-version",
     "release:alpha": "standard-version --prerelease alpha",
     "release:first": "standard-version --first-release",
@@ -17,8 +15,6 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
     "husky": "^5.2.0",
     "is-ci": "^3.0.0",
     "mili": "^4.4.1",
