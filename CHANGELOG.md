@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://www.github.com/mili-project-manager/mtpl-template/compare/v2.0.1...v2.0.2) (2023-02-22)
+
+
+### Bug Fixes
+
+* remove useless file ([97352a1](https://www.github.com/mili-project-manager/mtpl-template/commit/97352a1cf10a2ff52baf838013bac18147c2ce16))
+
 ### [2.0.1](https://www.github.com/mili-project-manager/mtpl-template/compare/v2.0.0...v2.0.1) (2021-05-30)
 
 
